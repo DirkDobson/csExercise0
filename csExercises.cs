@@ -24,6 +24,18 @@ namespace csExercises0
             Console.WriteLine(result);
 
             Console.WriteLine("Height and Width landscape or portrait");
+            int height = Convert.ToInt32(Console.ReadLine());
+            int width = Convert.ToInt32(Console.ReadLine());
+            var result1 = height > width ? $"portrait" : $"landscape";
+            Console.WriteLine(result1);
+
+            Console.WriteLline("speedlimit and over");
+            int speed = Convert.ToInt32(Console.ReadLine());
+            int limit = Convert.ToInt32(Console.ReadLine());
+            int over = speed - limit;
+            var result2 = speed > limit ? $"ok" : $"not ok over by {over}";
+            Console.WriteLine(result2);
+
 
         }
     }
